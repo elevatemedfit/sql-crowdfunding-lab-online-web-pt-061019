@@ -7,7 +7,7 @@
 # Make sure each ruby method returns a string containing a valid SQL statement.
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
-  "SELECT projects.title FROM projects;"
+  "SELECT projects.title FROM projects BY ASC;"
 end
 # SELECT Orders.OrderID, Customers.CustomerName
 # FROM Orders
