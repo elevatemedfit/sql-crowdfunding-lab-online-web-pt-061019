@@ -7,12 +7,11 @@
 # Make sure each ruby method returns a string containing a valid SQL statement.
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
-  "SELECT Pledges.amount, Projects.title
-  FROM Pledges
-  INNER JOIN Projects
-  ON Pledges.Projects.id = Projects.id;"
+  "SELECT projects.title, pledges.amount FROM projects ASC INNER JOIN pledges ON projects.pledges.id = pledges.pledgesid;"
 end
-
+# SELECT Orders.OrderID, Customers.CustomerName
+# FROM Orders
+# INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
   "Write your SQL query Here"
 end
